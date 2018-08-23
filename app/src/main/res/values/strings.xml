@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">超级笔记</string>
+
+
+    <string name="build_number">楼号</string>
+    <string name="cell_number">单元</string>
+    <string name="floor_number">楼层</string>
+    <string name="house_number">户</string>
+    <string name="inputTips">不足两位用0补齐</string>
+
+
 </resources>
