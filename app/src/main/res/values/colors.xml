@@ -6,5 +6,5 @@
 
     <!--字体提示色-->
     <color name="inputTips_color">#C1C1C1</color>
-    <color name="input_select_color">#FFCC00</color>
+    <color name="input_select_color">#FFF</color>
 </resources>

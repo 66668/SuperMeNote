@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--default-->
     <item android:state_window_focused="false" android:state_selected="false" android:state_checked="false">
         <shape android:shape="rectangle">
-            <solid android:color="#aaFFFFFF" />
-            <stroke android:width="1px" android:color="#C4C4C4" />
-            <corners android:radius="8px" />
+            <solid android:color="#05597D" />
+            <stroke android:width="2px" android:color="#1FA4C1" />
+            <corners android:radius="10px" />
         </shape>
     </item>
 
-    <!--<item android:state_focused="true" >-->
-        <!--<shape android:shape="rectangle">-->
-            <!--<solid android:color="#e3FFFFFF" />-->
-            <!--<stroke android:width="2px" android:color="#FFC300" />-->
-            <!--<corners android:radius="8px" />-->
-        <!--</shape>-->
-    <!--</item>-->
-
+    <!--变色-->
     <item android:state_selected="true">
         <shape android:shape="rectangle">
-            <solid android:color="#e3FFFFFF" />
-            <stroke android:width="2px" android:color="#FFC300" />
-            <corners android:radius="8px" />
+            <solid android:color="#1694B4" />
+            <stroke android:width="2px" android:color="#2DBFDE" />
+            <corners android:radius="10px" />
         </shape>
     </item>
 
     <item android:state_checked="true">
         <shape android:shape="rectangle">
-            <solid android:color="#e3FFFFFF" />
-            <stroke android:width="2px" android:color="#FFC300" />
-            <corners android:radius="8px" />
+            <solid android:color="#1694B4" />
+            <stroke android:width="2px" android:color="#2DBFDE" />
+            <corners android:radius="10px" />
         </shape>
     </item>
 

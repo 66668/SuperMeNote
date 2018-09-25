@@ -4,6 +4,7 @@
     <declare-styleable name="textInputViewStyle" >
         <!--输入框个数-->
         <attr name="inputNumber" format="integer" />
+
         <!--输入类型 可设置数字，，文字，数字密码，密码等样式-->
         <attr name="inputType">
             <enum name="number" value="0"/>

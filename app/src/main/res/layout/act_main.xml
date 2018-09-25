@@ -2,32 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--92*120 +64*84-->
+    <!--120*140-->
+
     <com.superme.sjynote.TextInputView
         android:id="@+id/textInputView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:inputType="number"
-        app:inputNumber="8"
-        app:inputWidth="92px"
-        app:inputHeight="120px"
-        app:inputSize="30px"
         app:inputBackground="@drawable/input_bg_style"
-        app:inputColor="#FFC300"
+        app:inputColor="@color/input_select_color"
         app:inputCursor="@drawable/input_cursor_style"
-        />
+        app:inputHeight="140px"
+        app:inputNumber="6"
+        app:inputSize="36px"
+        app:inputType="number"
+        app:inputWidth="120px" />
 
-    <TextView
+    <EditText
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
