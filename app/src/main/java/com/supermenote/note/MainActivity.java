@@ -1,29 +1,28 @@
-package com.superme.sjynote;
+package com.supermenote.note;
 
 import android.app.Activity;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.Bundle;
 import android.widget.Toast;
 
-import com.superme.sjynote.ui.pickerutils.WheelView;
 import com.superme.sjynote.ui.AddressLinkedPicker;
+import com.superme.sjynote.ui.pickerutils.AddressData;
 import com.superme.sjynote.ui.pickerutils.FifthBean;
 import com.superme.sjynote.ui.pickerutils.FirstBean;
 import com.superme.sjynote.ui.pickerutils.FourthBean;
+import com.superme.sjynote.ui.pickerutils.OnWheelLinkedListener;
 import com.superme.sjynote.ui.pickerutils.SecondBean;
 import com.superme.sjynote.ui.pickerutils.ThirdBean;
-import com.superme.sjynote.ui.pickerutils.AddressData;
-import com.superme.sjynote.ui.pickerutils.OnWheelLinkedListener;
-import com.supermenote.note.R;
+import com.superme.sjynote.ui.pickerutils.WheelView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * 主界面
+ *
  */
-
 public class MainActivity extends Activity {
     AddressLinkedPicker picker;
     private String[] labels;
@@ -37,7 +36,6 @@ public class MainActivity extends Activity {
             showAddressPicker();
         }
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +60,6 @@ public class MainActivity extends Activity {
         }).start();
 
     }
-
     private void showAddressPicker() {
 
         picker.setData(provider);

@@ -4,33 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:id="@+id/ly_main"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
     android:gravity="center"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--120*140-->
-
-    <com.superme.sjynote.TextInputView
-        android:id="@+id/textInputView"
+    <com.superme.sjynote.ui.AddressLinkedPicker
+        android:id="@+id/picker"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:inputBackground="@drawable/input_bg_style"
-        app:inputColor="@color/input_select_color"
-        app:inputCursor="@drawable/input_cursor_style"
-        app:inputHeight="140px"
-        app:inputNumber="6"
-        app:inputSize="36px"
-        app:inputType="number"
-        app:inputWidth="120px" />
+        android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/text"
+    <Button
+        android:text="呼叫"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
