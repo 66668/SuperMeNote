@@ -1,9 +1,14 @@
 package com.supermenote.note;
 
 import android.app.Activity;
+import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
+import android.os.MessageQueue;
+import android.os.SystemClock;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.superme.sjynote.ui.AddressLinkedPicker;
@@ -29,6 +34,8 @@ public class MainActivity extends Activity {
     private AddressData provider;
     private int showNum;
     private List<FirstBean> firstBeans;
+    MessageQueue messageQueue;
+    Looper myLooper;
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -40,7 +47,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_main);
-
+        Log.d("SJY", "onCreate: SystemClock.uptimeMillis()="+ SystemClock.uptimeMillis());
+        ServiceConnection connection;
         picker = findViewById(R.id.picker);
 
         //**************************************
