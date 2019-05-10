@@ -10,14 +10,5 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <com.superme.sjynote.ui.AddressLinkedPicker
-        android:id="@+id/picker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:text="呼叫"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>
