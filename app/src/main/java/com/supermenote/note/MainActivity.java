@@ -1,13 +1,12 @@
 package com.supermenote.note;
 
 import android.Manifest;
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.supermenote.note.permission.BaseAct;
-import com.supermenote.note.permission.MyPermissionListener;
+import com.supermenote.permission.BaseAct;
+import com.supermenote.permission.MyPermissionListener;
 
 /**
  * 主界面

@@ -1,4 +1,4 @@
-package com.supermenote.note.permission;
+package com.supermenote.permission;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
