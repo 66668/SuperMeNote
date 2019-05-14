@@ -1,4 +1,4 @@
-package com.supermenote.manager;
+package com.supermenote.note.manager;
 
 /**
  * 数据库管理者，该类负责act与db的交互管理

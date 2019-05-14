@@ -15,7 +15,6 @@ import android.os.Message;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.Selection;
-import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -31,7 +30,7 @@ import android.widget.TextView;
 
 import androidx.core.content.FileProvider;
 
-import com.supermenote.permission.BaseAct;
+import com.supermenote.note.permission.BaseAct;
 
 import org.json.JSONException;
 import org.json.JSONObject;

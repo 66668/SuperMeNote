@@ -3,15 +3,15 @@ package com.supermenote.note;
 import android.Manifest;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import com.supermenote.note.permission.BaseAct;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.supermenote.permission.BaseAct;
-import com.supermenote.permission.MyPermissionListener;
+import com.supermenote.note.permission.MyPermissionListener;
 
 /**
  * 主界面
  */
-public class MainActivity extends BaseAct {
+public class MainAct extends BaseAct {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

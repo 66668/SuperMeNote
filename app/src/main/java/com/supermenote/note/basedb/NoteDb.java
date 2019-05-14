@@ -1,4 +1,4 @@
-package com.supermenote.basedb;
+package com.supermenote.note.basedb;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.supermenote.note.utils.BaseUtils;
 import com.thinkernote.ThinkerNote.Action.TNAction;
 import com.thinkernote.ThinkerNote.Action.TNAction.TNActionResult;
 import com.thinkernote.ThinkerNote.General.TNActionType;
@@ -18,7 +19,7 @@ import java.util.Vector;
 
 /**
  * 数据库基类
- *
+ * <p>
  * 创建，升级，操作等，通过封装的辅助类，最终都调用该类进行操作。
  */
 public class NoteDb extends SQLiteOpenHelper {
@@ -31,22 +32,17 @@ public class NoteDb extends SQLiteOpenHelper {
     private int changeBits;
 
     public NoteDb() {
-        super(TNUtils.getAppContext(), DB_NAME, null, DB_VER);
+        super(BaseUtils.getAppContext(), DB_NAME, null, DB_VER);
 
         db = getWritableDatabase();
 
-        //TODO 需要修改 优化
-        TNAction.regRunner(TNActionType.Db_Execute, this, "executeSQL");
-        TNAction.regRunner(TNActionType.DBReset, this, "DBReset");
-//        resetDb();
-
     }
 
-    public static TNDb getInstance() {
+    public static NoteDb getInstance() {
         if (singleton == null) {
-            synchronized (TNDb.class) {
+            synchronized (NoteDb.class) {
                 if (singleton == null) {
-                    singleton = new TNDb();
+                    singleton = new NoteDb();
                 }
             }
         }

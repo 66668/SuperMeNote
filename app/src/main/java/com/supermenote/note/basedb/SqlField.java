@@ -1,4 +1,4 @@
-package com.supermenote.basedb;
+package com.supermenote.note.basedb;
 
 /**
  * 字段统一定义及功能说明
@@ -16,6 +16,5 @@ public class SqlField {
 
 
     //===================================表-sql语句=====================================
-
 
 }
